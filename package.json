@@ -4,6 +4,7 @@
   "description": "Tutorial: How to use Rust inside your Electron application with Neon Bindings. https://medium.com/@cazetto.andre/how-to-use-rust-inside-your-electron-application-using-neon-bindings-64bd83fec316",
   "main": "index.node",
   "scripts": {
+    "dev": "electron ./src/main.js",
     "build": "cargo-cp-artifact -nc index.node -- cargo build --message-format=json-render-diagnostics",
     "install": "npm run build",
     "test": "cargo test"
@@ -11,7 +12,8 @@
   "author": "André Pesci Cazetto",
   "license": "MIT",
   "devDependencies": {
-    "cargo-cp-artifact": "^0.1"
+    "cargo-cp-artifact": "^0.1",
+    "electron": "^13.1.8"
   },
   "repository": {
     "type": "git",
