@@ -1,0 +1,16 @@
+[package]
+name = "neon-electron"
+version = "0.1.0"
+description = "Tutorial: How to use Rust inside your Electron application with Neon Bindings. https://medium.com/@cazetto.andre/how-to-use-rust-inside-your-electron-application-using-neon-bindings-64bd83fec316"
+authors = ["André Pesci Cazetto"]
+license = "MIT"
+edition = "2018"
+exclude = ["index.node"]
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies.neon]
+version = "0.9"
+default-features = false
+features = ["napi-6"]
