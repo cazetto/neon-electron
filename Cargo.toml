@@ -14,3 +14,6 @@ crate-type = ["cdylib"]
 version = "0.9"
 default-features = false
 features = ["napi-6"]
+
+[dependencies]
+num_cpus = "1"
